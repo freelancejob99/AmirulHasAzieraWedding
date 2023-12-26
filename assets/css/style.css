@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Dancing Script', cursive;
+ font-family: Arial, Helvetica, sans-serif;
   color: #272829;
 }
 
@@ -24,7 +24,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dancing Script', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   color: #afa184;
 }
 hr {
