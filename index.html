@@ -15,7 +15,7 @@
 <link href='https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital,wght@1,400&display=swap' rel='stylesheet' type='text/css'>
 
   <!-- Favicons -->
-  <link href="https://mfrachet.github.io/create-frontend-framework/logo.png" rel="icon">
+  <link href="https://cdn-icons-png.flaticon.com/512/9656/9656139.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -54,7 +54,7 @@
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Utama</span></a></li>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-cake"></i> <span>Utama</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Jemputan</span></a></li>
         <li><a href="#aturcara" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Aturcara Majlis</span></a></li>
         
@@ -104,7 +104,7 @@
     </div>
     <!-- <div id="snackbar"><b>DETAIL MODE..</b></div>
     <div id="snackbar2"><b><i>TLDR</i> MODE..</b></div> -->
-    
+    <!-- Snackbar HTML -->
   </section><!-- End Hero -->
 </main>
   
@@ -118,8 +118,8 @@
       <button onclick="bukaTirai()">Sila Buka</button>
 
       </div>
-      <!-- <div id="snackbar"><b>DETAIL MODE..</b></div>
-      <div id="snackbar2"><b><i>TLDR</i> MODE..</b></div> -->
+      <div id="snackbar"><b>DETAIL MODE..</b></div>
+      <div id="snackbar2"><b><i>TLDR</i> MODE..</b></div>
       
     </section><!-- End Hero -->
   </main>
@@ -151,8 +151,9 @@
             <p style="font-size: 25px;margin-bottom: 10px; color:#afa184;"><b>Tempat</b></p>
             <p style="margin-bottom: 10px;"><b>Dewan Hyogo MJII</b><br>
               Jln Kesuma 3/3, Bandar Sri Kesuma, 43700 Beranang, Selangor</p>
-              <p style="margin-bottom: 10px;"><i style="color: black;">Tekan butang 👇🏻 untuk Navigasi</i></p><a target="_blank" href="https://maps.app.goo.gl/p4ueeDHNyafV4PRJ7?g_st=ic" style="margin-bottom: 30px; font-size: 10px; " class="button-47" role="button">Dewan Hyogo MJII &#8594;</a>
+              <p style="margin-bottom: 10px;"><i style="color: black;">Tekan butang 👇🏻 untuk Navigasi</i></p>
             </div>
+            <div class="fadein"><a target="_blank" href="https://maps.app.goo.gl/p4ueeDHNyafV4PRJ7?g_st=ic" style="margin-bottom: 30px; font-size: 10px; " class="button-47" role="button">Dewan Hyogo MJII &#8594;</a></div>
             <div class="fadein">
               <p style="font-size: 25px;margin-bottom: 10px; color:#afa184;"><b>Tarikh</b></p>
               <p style="margin-bottom: 10px;"><b>Sabtu, 2 Mac 2024</b><br>Bersamaan 21 Syaaban 1445H</p>  
@@ -220,15 +221,15 @@
         <div style="width: 450px;" class=" align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box iconbox-blue">
     
-            <p style="font-size: 25px;margin-bottom: 10px; color:#afa184;"><b>Aturcara Majlis</b></p>
+            <p class="fadein" style="font-size: 25px;margin-bottom: 10px; color:#afa184;"><b>Aturcara Majlis</b></p>
             <hr class="hr-4">
-            <p style="margin-bottom: 10px; color:#978b73;"><b>11 Pagi</b><br>
+            <p class="fadein" style="margin-bottom: 10px; color:#978b73;"><b>11 Pagi</b><br>
               Kehadiran tetamu di Dewan Hyogo MJII, Beranang.</p>
-            <p style="margin-bottom: 10px; color:#978b73;"><b>12 Tengahari</b><br>
+            <p class="fadein" style="margin-bottom: 10px; color:#978b73;"><b>12 Tengahari</b><br>
               Ketibaan Pengantin.</p>
-            <p style="margin-bottom: 10px; color:#978b73;"><b>1 Petang</b><br>
+            <p class="fadein" style="margin-bottom: 10px; color:#978b73;"><b>1 Petang</b><br>
               Makan Beradab.</p>
-            <p style="margin-bottom: 10px; color:#978b73;"><b>4.30 Petang</b><br>
+            <p class="fadein" style="margin-bottom: 10px; color:#978b73;"><b>4.30 Petang</b><br>
               Majlis Tamat.</p>
           </div>
         </div>
@@ -270,6 +271,11 @@
 
   
    <hr class="hr-1">
+
+  <section id="countdown" class="about">
+
+
+  </section>
      <!-- ======= Services Section ======= -->
      <!-- <section id="services" class="services">
       <div class="container" data-aos="fade-up">
@@ -502,11 +508,71 @@
   <div id="preloader"></div>
   <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
  
-  <div id="floatingRSVP" class="adminActions">
-    <a class="button-47" style="background-color:#c8ad78; font-family:'Tiro Devanagari Hindi', serif;; color: white;" href="#">RSVP</a>
+  <!-- <div id="floatingRSVP" class="adminActions">
+    <a class="adminToggle" style="background-color:#c8ad78; font-family:'Tiro Devanagari Hindi', serif;; color: white;" href="#!">RSVP 📨</a>
+    <div class="adminButtons">
+      <a href="#" title="Add Company"><i class="fa fa-building"></i></a>
+      <a href="#" title="Edit Company"><i class="fa fa-pen"></i></a>
+      <a href="#" title="Add User"><i class="fa fa-user-plus"></i></a>
+      <a href="#" title="Edit User"><i class="fa fa-user-edit"></i></a>
+    </div>
+  </div> -->
+  <div id="floatingRSVP" class="ba-we-love-subscribers-wrap" >
+    <div class="ba-we-love-subscribers popup-ani">
+      <header>
+       
+        <div class="row" style="margin: auto; width: 70%;">
+          <h1>RSVP Kehadiran</h1>
+          <hr class="hr-1">
+          <button class="buttonRSVP"  id="buttonHadir" style="margin-bottom: 10px; margin-top: 30%;" onclick="buttonhadir()">Hadir ✅</button>
+          <button class="buttonRSVP"  id="buttonXHadir" onclick="buttonhXhadir()" >Tidak Hadir ❌</button> 
+        </div>
+        
+      </header>
+      <!-- form RSVP hadir -->
+      <form id="hadir" name="RSVP_form" action="" 
+      method="post" >
+        <input required name="nama" placeholder="Nama"  value=""><br>
+        <input required name="qty" placeholder="Jumlah Kehadiran"  value=""><br>
+        <input required style="height: 60px;" name="ucapan" placeholder="Ucapan" value=""><br>
+        <!-- <input class="logo-ani" name="submit" type="submit">
+        <input class="logo-ani" name="submit" onclick="buttonBatal()"> -->
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center; padding-left: 30px;">
+        <button class="buttonRSVP" id="hantar" type="submit" style="margin-right: 20px;">Hantar</button>
+        <button class="buttonRSVP" id="batal" onclick="buttonBatal()" type="reset" style="margin-right: 20px;">Batal</button>
+        </div>
+      </form>
+      <!-- form RSVP tak hadir -->
+      <form id="xhadir" action="http://feedburner.google.com/fb/a/mailverify" method="post" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=barreldotim', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow">
+        <input name="email" placeholder="Nama"  value=""><br>
+        <input style="height: 60px;" name="email" placeholder="Ucapan" value=""><br>
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center; padding-left: 30px;">
+        <button class="buttonRSVP" id="hantar" type="submit"  style="margin-right: 20px;">Hantar</button>
+        <button class="buttonRSVP" id="batal" onclick="buttonBatal()" type="reset" style="margin-right: 20px;">Batal</button>
+        </div>
+      </form>
+
+
+   
+    </div>
+    <div class="ba-we-love-subscribers-fab">
+      <div class="wrap">
+        <div class="img-fab img"></div>
+      </div>
+    </div>
   </div>
+ 
 
   <script>
+    $(".ba-we-love-subscribers-fab").click(function() {
+    $('.ba-we-love-subscribers-fab .wrap').toggleClass("ani");
+    $('.ba-we-love-subscribers').toggleClass("open");
+    $('.img-fab.img').toggleClass("close");
+    });
     const toggleBtn = document.getElementById('toggle-btn');
     const contentDiv = document.getElementById('main');
     const navbar = document.getElementById('navbar');
@@ -520,7 +586,12 @@
     const RSVP  = document.getElementById('floatingRSVP');
     const x = document.getElementById("snackbar");
     const y = document.getElementById("snackbar2");
-    
+    const hadir = document.getElementById("hadir");
+    const xhadir = document.getElementById("xhadir");
+    const hantar = document.getElementById("hantar");
+    const batal = document.getElementById("batal");
+    const buttonHadir = document.getElementById("buttonHadir");
+    const buttonXHadir = document.getElementById("buttonXHadir");
 
     contentDiv.style.display = 'none'
     navbar.style.display = 'none';
@@ -529,6 +600,10 @@
     footer.style.display = 'none';
     toggle.style.display = 'none';
     RSVP.style.display = 'none';
+    hadir.style.display = 'none';
+    xhadir.style.display = 'none';
+    hantar.style.display = 'none';
+    batal.style.display = 'none';
     
     function bukaTirai(){
       contentDiv.style.display = 'block';
@@ -546,40 +621,50 @@
       // setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       document.getElementById('player').play();
     
-    }
+    };
+    function buttonhadir(){
+      hadir.style.display = 'block';
+      hantar.style.display = 'block';
+      batal.style.display = 'block';
+      buttonHadir.style.display = 'none';
+      buttonXHadir.style.display = 'none';
+    };
+    function buttonhXhadir(){
+      xhadir.style.display = 'block';
+      hadir.style.display = 'none';
+      hantar.style.display = 'block';
+      batal.style.display = 'block';
+      buttonHadir.style.display = 'none';
+      buttonXHadir.style.display = 'none';
+    };
+    function buttonBatal(){
+      hadir.style.display = 'none';
+      xhadir.style.display = 'none';
+      hantar.style.display = 'none';
+      batal.style.display = 'none';
+      buttonHadir.style.display = 'block';
+      buttonXHadir.style.display = 'block';
 
-    // checkbox.addEventListener('change', (event) => {
-    // if (event.target.checked) {
-      
-    //   contentDiv.style.display = 'block';
-    //   navbar.style.display = 'block';
-    //   typewriter.style.display = 'block';
-    //   contentDiv2.style.display = 'block';
-    //   simple.style.display = 'none';
-    //   contentDiv2.style.display = 'none';
-    //   hero.style.display = 'block';
-    //   silaBuka.style.display = 'none';
-    //   footer.style.display = 'block';
-    //   toggle.style.display = 'block';     
-    //   x.className = "show";
-    //   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    };
+    function resetForm(){
+      document.getElementById("hadir").reset();
+    };
+    function autoClick(){
+      $(".ba-we-love-subscribers-fab").click();
     
+    };
 
-    // }
-    // else {
-    //   contentDiv.style.display = 'none';
-    //   navbar.style.display = 'none';
-    //   typewriter.style.display = 'none';
-    //   contentDiv2.style.display = 'block';
-    //   simple.style.display = 'block';
-    //   hero.style.display = 'none';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKA6dikKJrVFAbzO-7gZPQ8JEetjmSQ38v_9TuSMAp7KdmIV--iDOMgqaf-BCmUPU/exec'
+    const form = document.forms['RSVP_form']
 
-      
-    //   y.className = "show";
-    //   setTimeout(function(){ y.className = y.className.replace("show", ""); }, 3000);
-    // }
-    // });
-
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      buttonBatal();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {  autoClick();resetForm();
+        })
+      .catch(error => console.error('Error!', error.message))
+    });
    
     </script> 
   
