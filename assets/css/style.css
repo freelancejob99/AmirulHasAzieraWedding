@@ -117,7 +117,7 @@ hr.hr-6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff  url(https://media.tenor.com/A8rTg800qG0AAAAi/icon-cute.gif) no-repeat center center;
+  background: #fff  url(https://i.pinimg.com/originals/12/0b/57/120b57fffa73dcd4cee7e50d8edb3b37.gif) no-repeat center center;
   background-size: 30%;
   
 } 
@@ -1401,7 +1401,7 @@ input:checked + .slider:before {
 
 .button-47 {
   align-items: center;
-  background: #FFFFFF;
+  background: white;
   border: 0 solid #E2E8F0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -1521,7 +1521,7 @@ input:checked + .slider:before {
 	width: 65px;
 	height: 65px;
 	background-color:#c8ad78;
-	border-radius: 30px;
+	border-radius:50%;
 	float: right;
 	box-shadow: 0px 12px 45px rgba(0, 0, 0, .3);
 	z-index: 5;
@@ -1532,8 +1532,8 @@ input:checked + .slider:before {
 	width: 30px;
 	margin: 15px auto;
   padding-top: 20px;
-	background-image: url("https://4.bp.blogspot.com/-1J75Et4_5vc/WAYhWRVuMiI/AAAAAAAAArE/gwa-mdtq0NIqOrlVvpLAqdPTV4VAahMsQCPcB/s1600/barrel-we-love-subscribers-img.png");
-	background-position: -1px -53px;
+	background-image: url("../img/barrel-we-love-subscribers-img.png");
+	background-position: -4px -49px;
 }
 .ba-we-love-subscribers-fab .wrap {
 	transform: rotate(0deg);
@@ -1744,3 +1744,4 @@ input:checked + .slider:before {
   top: 0;
   opacity: 1;
 }
+
