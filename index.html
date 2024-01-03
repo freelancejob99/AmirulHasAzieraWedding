@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Place in your HTML file between the <head> tags -->
-
+ 
 <link rel='preconnect' href='https://fonts.googleapis.com'>
 <link href='https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital,wght@1,400&display=swap' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -72,7 +72,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div id="dahBuka" class="container" data-aos="zoom-in" data-aos-delay="100">
       
-   
+      <div id="zoom">
       <img src="https://vectorise.net/vectorworks/logos/Islamic/download/Walimatul%20Urus%2001.png" alt="Italian Trulli" width="250" height="80">
       <br>
       <br>
@@ -99,6 +99,7 @@
         <main id="main2">
   
         </main>
+        </div>
         
       </div>
 
@@ -194,7 +195,12 @@
               <p style="margin-bottom: 10px;"><b>11 Pagi - 4.30 Petang</b></p>  
             </div>
             <hr class="hr-6">
-        <div class="row">
+        <div class="row fadein" style="display: flex;
+        justify-content: center;
+        align-items: center;">
+          <button id="flip" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Simpan Tarikh! 🗓️
+          </button>
 
         </div>
 
@@ -386,6 +392,30 @@
   </div> -->
     <!-- Toast container -->
     <div id="toastContainer" class="toast-container"></div>
+    <!-- modal simpan tarikh  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="display: flex;
+        justify-content: center;
+        align-items: center;">
+          <div class="modal-header" >
+            <h5 class="modal-title" id="exampleModalLabel">Sabtu, 2 Mac 2024</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <div class="fadein"><a target="_blank" href="https://calendar.google.com/calendar/u/0/r/eventedit/copy/NTlkZ3FuYzBocDlpYjBqdDE4dDZsODgwMjggbXlmcmVlbGFuY2Vqb2I5OUBt/bXlmcmVlbGFuY2Vqb2I5OUBnbWFpbC5jb20" 
+              style="margin-bottom: 10px; width: 200px; font-size: 10px; background-color:white; color: #4285F4;" class="button-47" role="button">Simpan di Google Calendar <i style="font-size: 20px;" class='bx bxl-google' ></i></a>
+            </div>
+            <div class="fadein"><a target="_blank" href="assets/kalendar.ics" 
+              style="margin-bottom: 30px; width: 200px; font-size: 10px; background-color: white; color:#ff6254;" class="button-47" role="button">Simpan di Apple Calendar <i style="font-size: 20px;" class='bx bxl-apple'></i></a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <script>
@@ -442,6 +472,7 @@
       // setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       document.getElementById('player').play();
       triggerToasts();
+      document.getElementById('zoom').classList.add("w3-animate-zoom");
     };
     function getCurrentFormattedDateTime() {
         const currentDate = new Date();
